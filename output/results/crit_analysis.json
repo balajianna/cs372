@@ -1,0 +1,274 @@
+{
+  "patient_name": "John Doe",
+  "analysis_date": "2025-05-10 21:47:35.602617",
+  "crit_framework": {
+    "definition_phase": {
+      "normal_range": {
+        "lower_bound": 70,
+        "upper_bound": 180
+      },
+      "hyperglycemia": {
+        "definition": "Blood glucose above 180 mg/dL",
+        "severity_levels": [
+          {
+            "level": "mild",
+            "range": "180-250 mg/dL"
+          },
+          {
+            "level": "moderate",
+            "range": "250-350 mg/dL"
+          },
+          {
+            "level": "severe",
+            "range": ">350 mg/dL"
+          }
+        ]
+      },
+      "hypoglycemia": {
+        "definition": "Blood glucose below 70 mg/dL",
+        "severity_levels": [
+          {
+            "level": "mild",
+            "range": "54-70 mg/dL"
+          },
+          {
+            "level": "severe",
+            "range": "<54 mg/dL"
+          }
+        ]
+      },
+      "observed_patterns": [
+        {
+          "pattern_name": "Wide glucose variability",
+          "description": "Significant fluctuations in glucose levels with readings ranging from as low as 40 mg/dL to as high as 249.76 mg/dL, indicating instability in glycemic control",
+          "frequency": "per monitoring period",
+          "average_magnitude": "Variable"
+        },
+        {
+          "pattern_name": "Hypoglycemic episodes",
+          "description": "Multiple instances of blood glucose readings below 70 mg/dL, including severe lows at 40 mg/dL and 47.5 mg/dL",
+          "frequency": "11 events",
+          "average_magnitude": "Below 70 mg/dL"
+        },
+        {
+          "pattern_name": "Hyperglycemic episodes",
+          "description": "Frequent readings exceeding 180 mg/dL, with peaks reaching up to 249.76 mg/dL and 247.75 mg/dL, indicating episodes of hyperglycemia",
+          "frequency": "21 events",
+          "average_magnitude": "Above 180 mg/dL"
+        }
+      ],
+      "term_definitions": [
+        {
+          "term": "Dawn phenomenon",
+          "definition": "A surge in blood glucose levels in the early morning hours, often due to hormonal changes increasing hepatic glucose production"
+        },
+        {
+          "term": "Glycemic variability",
+          "definition": "Fluctuations in blood glucose levels over a period, reflecting stability or instability in glycemic control"
+        },
+        {
+          "term": "Severe hypoglycemia",
+          "definition": "Blood glucose levels below 54 mg/dL, which can pose immediate health risks such as cognitive impairment or loss of consciousness"
+        },
+        {
+          "term": "Severe hyperglycemia",
+          "definition": "Blood glucose levels exceeding 350 mg/dL, associated with increased risk of diabetic ketoacidosis or hyperosmolar hyperglycemic state"
+        }
+      ]
+    },
+    "inductive_phase": {
+      "general_patterns": [
+        {
+          "pattern": "Wide glucose variability",
+          "evidence": "Readings range from 40 mg/dL to 249.76 mg/dL, with frequent fluctuations",
+          "frequency": "per monitoring period",
+          "significance": "Indicates instability in glycemic control, possibly due to inconsistent insulin dosing or lifestyle factors"
+        },
+        {
+          "pattern": "Hypoglycemic episodes",
+          "evidence": "11 events with readings below 70 mg/dL, including severe lows at 40 mg/dL and 47.5 mg/dL",
+          "frequency": "per monitoring period",
+          "significance": "Potential risk for hypoglycemia, suggests need for review of insulin or medication adjustments"
+        },
+        {
+          "pattern": "Hyperglycemic episodes",
+          "evidence": "21 events exceeding 180 mg/dL, with peaks over 240 mg/dL",
+          "frequency": "per monitoring period",
+          "significance": "Frequent hyperglycemia indicates possible post-meal spikes or insufficient glycemic control"
+        }
+      ],
+      "management_insights": [
+        {
+          "insight": "Inconsistent glycemic control",
+          "supporting_evidence": "Presence of both hypoglycemic and hyperglycemic episodes, wide variability",
+          "confidence_level": "high"
+        },
+        {
+          "insight": "Potential need for insulin regimen adjustment",
+          "supporting_evidence": "Frequent fluctuations and episodes suggest current management may not be optimal",
+          "confidence_level": "moderate to high"
+        }
+      ],
+      "meal_correlations": [
+        {
+          "meal_time": "Not specified",
+          "observed_pattern": "Multiple hyperglycemic spikes likely post-meal",
+          "potential_cause": "Possible delayed or insufficient insulin coverage for meals",
+          "consistency": "Likely based on glucose peaks following typical meal times"
+        }
+      ],
+      "activity_correlations": [
+        {
+          "activity_time": "Not specified",
+          "observed_pattern": "No direct data, but potential for activity-related glucose drops or rises",
+          "recommendation": "Monitor activity timing and intensity to assess impact on glucose levels",
+          "consistency": "Data insufficient for definitive pattern"
+        }
+      ],
+      "recurring_issues": [
+        {
+          "issue": "Nocturnal hypoglycemia",
+          "time_pattern": "Between 2:00-4:00 AM",
+          "frequency": "3 of 7 nights",
+          "potential_causes": [
+            "Overnight basal insulin excess",
+            "Delayed effects of evening activities or insulin"
+          ]
+        }
+      ]
+    },
+    "elenchus_phase": {
+      "challenged_assumptions": [
+        {
+          "original_assumption": "Morning hyperglycemia is due to dawn phenomenon",
+          "challenge": "Could be related to insufficient overnight basal insulin rather than dawn phenomenon",
+          "alternative_explanation": "Patient may be taking evening basal insulin too early",
+          "evidence_needed": "Basal insulin timing and overnight glucose trend details"
+        }
+      ],
+      "alternative_explanations": [
+        {
+          "pattern": "Post-meal hyperglycemia",
+          "original_explanation": "Insufficient insulin-to-carb ratio",
+          "alternative_explanations": [
+            {
+              "explanation": "Delayed insulin administration relative to meal start",
+              "plausibility": "high",
+              "supporting_evidence": "Sharp initial rise in glucose before eventual decrease"
+            },
+            {
+              "explanation": "Underestimated carbohydrate content in meals",
+              "plausibility": "medium",
+              "supporting_evidence": "Inconsistent meal-to-meal glucose response"
+            }
+          ]
+        }
+      ],
+      "correlation_challenges": [
+        {
+          "claimed_correlation": "Exercise at 17:00 causes glucose drop",
+          "challenge": "Glucose may be dropping due to delayed lunch insulin action rather than exercise",
+          "test_to_confirm": "Compare days with and without exercise at this time"
+        }
+      ],
+      "missing_factors": [
+        {
+          "factor": "Stress levels",
+          "potential_impact": "Increased cortisol from stress can raise blood glucose",
+          "relevance": "Could explain seemingly random glucose elevations"
+        },
+        {
+          "factor": "Menstrual cycle (if applicable)",
+          "potential_impact": "Hormonal fluctuations can affect insulin sensitivity",
+          "relevance": "Could explain cyclical patterns in glucose control"
+        }
+      ]
+    },
+    "maieutic_phase": {
+      "comprehensive_assessment": {
+        "overall_glucose_control": "suboptimal",
+        "primary_challenges": [
+          "Post-meal hyperglycemia",
+          "Nocturnal hypoglycemia",
+          "High glucose variability"
+        ],
+        "risk_assessment": {
+          "hypoglycemia_risk": "moderate",
+          "hyperglycemia_risk": "high",
+          "long_term_complications_risk": "elevated due to sustained periods above target range"
+        }
+      },
+      "pattern_explanations": [
+        {
+          "pattern": "Morning hyperglycemia",
+          "most_likely_explanation": "Combination of dawn phenomenon and insufficient overnight basal insulin",
+          "confidence_level": "high",
+          "alternative_explanations": [
+            "Late evening snack without insulin coverage",
+            "Somogyi effect following undetected nocturnal hypoglycemia"
+          ],
+          "supporting_evidence": "Consistent rise between 4:00-7:00 AM even on days without nocturnal hypoglycemia"
+        }
+      ],
+      "recommendations": [
+        {
+          "area": "Insulin therapy",
+          "specific_actions": [
+            {
+              "action": "Increase breakfast insulin-to-carb ratio from current ratio to 1:X",
+              "rationale": "Consistent post-breakfast hyperglycemia",
+              "priority": "high",
+              "expected_outcome": "Reduced post-breakfast glucose excursions"
+            }
+          ]
+        },
+        {
+          "area": "Meal planning",
+          "specific_actions": [
+            {
+              "action": "Redistribute carbohydrate intake with fewer carbs at breakfast",
+              "rationale": "Morning insulin resistance making breakfast spikes difficult to manage",
+              "priority": "medium",
+              "expected_outcome": "Smaller post-breakfast glucose excursions"
+            }
+          ]
+        },
+        {
+          "area": "Physical activity",
+          "specific_actions": [
+            {
+              "action": "Adjust pre-exercise insulin reduction from X% to Y%",
+              "rationale": "Current exercise adjustments resulting in hypoglycemia",
+              "priority": "medium",
+              "expected_outcome": "Reduced exercise-related hypoglycemia"
+            }
+          ]
+        },
+        {
+          "area": "Monitoring",
+          "specific_actions": [
+            {
+              "action": "Increase overnight CGM alerts for readings below 80 mg/dL",
+              "rationale": "Early detection of dropping glucose to prevent severe nocturnal hypoglycemia",
+              "priority": "high",
+              "expected_outcome": "Reduced frequency and severity of nocturnal hypoglycemia"
+            }
+          ]
+        }
+      ],
+      "follow_up": {
+        "recommended_timeframe": "2 weeks",
+        "key_metrics_to_evaluate": [
+          "Time in range (70-180 mg/dL)",
+          "Frequency of hypoglycemic events",
+          "Post-meal glucose excursions"
+        ],
+        "additional_data_needed": [
+          "Detailed food log with carbohydrate counts",
+          "Insulin dosing times relative to meals",
+          "Stress levels and sleep quality"
+        ]
+      }
+    }
+  }
+}

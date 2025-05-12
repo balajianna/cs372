@@ -1,0 +1,427 @@
+{
+  "patient_profile": {
+    "id": "002",
+    "name": "John Doe",
+    "age": 58,
+    "diabetes_type": null,
+    "years_with_diabetes": null,
+    "medications": null,
+    "medical_history": null,
+    "cgm_stats": {
+      "mean": 136.78770456126784,
+      "median": 137.09014596174478,
+      "std_dev": 45.04443676863403,
+      "min": 40.0,
+      "max": 249.76062041373632,
+      "hypoglycemia_events": 11,
+      "hyperglycemia_events": 21
+    },
+    "glucose_readings": [
+      136.03206130371015,
+      201.64374869770356,
+      176.17981811759648,
+      201.55550361131105,
+      183.1210282301157,
+      181.703758474826,
+      167.21923317101684,
+      55.80436025772016,
+      194.26072215900027,
+      224.88907553816378,
+      249.76062041373632,
+      190.30608849418627,
+      150.3547894589443,
+      118.2496528037617,
+      153.93920413631906,
+      148.14096538513675,
+      125.44351145374428,
+      154.6925931619624,
+      60.42071644174702,
+      144.87182574116568,
+      68.06341707133481,
+      176.34208944974043,
+      103.73275826575018,
+      47.540278960336906,
+      129.3276693900966,
+      125.04770601702755,
+      140.19353627590093,
+      166.44316903935695,
+      85.00335213333956,
+      87.43434007788369,
+      104.60587717524146,
+      61.782031265753155,
+      87.76500169621792,
+      101.85324020083698,
+      113.08536247076536,
+      100.03476262792135,
+      145.31188501445484,
+      155.73942444097202,
+      126.53731977157355,
+      163.26396812955454,
+      131.47062640454965,
+      120.39952544589227,
+      176.55324067675517,
+      97.34532035103804,
+      149.17667726677107,
+      84.15306912580753,
+      60.071989847270544,
+      119.19374015212337,
+      107.68982262344855,
+      133.921260045846,
+      159.42683567175135,
+      148.30693666090056,
+      94.88999622056016,
+      159.40690322407215,
+      202.18396682928275,
+      111.9219355939175,
+      86.1090480003516,
+      154.36654366742837,
+      96.06280187707326,
+      133.29260623459643,
+      244.0980750794318,
+      188.373800899135,
+      181.81540270523382,
+      167.38014132282495,
+      164.70600383382614,
+      196.7558880387352,
+      230.61295466188795,
+      166.76260929861346,
+      192.54459449777593,
+      211.62518532976844,
+      247.74979584265256,
+      209.7944092588086,
+      102.83038805094796,
+      134.81904137396012,
+      188.98169587554776,
+      65.38363134963843,
+      198.0570874940932,
+      99.39086477128131,
+      134.5199275432899,
+      122.3982118430338,
+      145.93883952431688,
+      148.55240252448596,
+      98.163268248251,
+      179.07141502060662,
+      153.93037090521665,
+      93.60292208991714,
+      139.55667407299265,
+      150.06479005223773,
+      110.69589164668591,
+      156.51570608234448,
+      165.62260288090263,
+      147.9934263138882,
+      93.52468767029427,
+      142.88026590839442,
+      138.3309194456278,
+      197.97112516281612,
+      148.52325267654854,
+      115.11273456904236,
+      40.0,
+      80.27405170733125,
+      131.43624820774423,
+      68.18794409014234,
+      118.20382764123498,
+      120.76962028427005,
+      64.87376624800342,
+      129.42590850544173,
+      91.83299470843355,
+      94.26977149902065,
+      132.29434474991976,
+      116.12034983502785,
+      98.63199112328289,
+      111.84970869643308,
+      174.56207935700235,
+      93.9980397159633,
+      138.14823061977944,
+      144.886999620433,
+      98.7696757828336,
+      56.430926304015145,
+      152.41630060374357,
+      148.85145174167107
+    ],
+    "monitoring_period": "2025-05-10 08:00:00 to 2025-05-10 17:55:00"
+  },
+  "statistics": {
+    "mean": 136.78770456126784,
+    "median": 137.09014596174478,
+    "std_dev": 45.04443676863403,
+    "min": 40.0,
+    "max": 249.76062041373632,
+    "hypoglycemia_events": 11,
+    "hyperglycemia_events": 21
+  },
+  "crit_analysis": {
+    "patient_name": "John Doe",
+    "analysis_date": "2025-05-10 21:47:35.602617",
+    "crit_framework": {
+      "definition_phase": {
+        "normal_range": {
+          "lower_bound": 70,
+          "upper_bound": 180
+        },
+        "hyperglycemia": {
+          "definition": "Blood glucose above 180 mg/dL",
+          "severity_levels": [
+            {
+              "level": "mild",
+              "range": "180-250 mg/dL"
+            },
+            {
+              "level": "moderate",
+              "range": "250-350 mg/dL"
+            },
+            {
+              "level": "severe",
+              "range": ">350 mg/dL"
+            }
+          ]
+        },
+        "hypoglycemia": {
+          "definition": "Blood glucose below 70 mg/dL",
+          "severity_levels": [
+            {
+              "level": "mild",
+              "range": "54-70 mg/dL"
+            },
+            {
+              "level": "severe",
+              "range": "<54 mg/dL"
+            }
+          ]
+        },
+        "observed_patterns": [
+          {
+            "pattern_name": "Wide glucose variability",
+            "description": "Significant fluctuations in glucose levels with readings ranging from as low as 40 mg/dL to as high as 249.76 mg/dL, indicating instability in glycemic control",
+            "frequency": "per monitoring period",
+            "average_magnitude": "Variable"
+          },
+          {
+            "pattern_name": "Hypoglycemic episodes",
+            "description": "Multiple instances of blood glucose readings below 70 mg/dL, including severe lows at 40 mg/dL and 47.5 mg/dL",
+            "frequency": "11 events",
+            "average_magnitude": "Below 70 mg/dL"
+          },
+          {
+            "pattern_name": "Hyperglycemic episodes",
+            "description": "Frequent readings exceeding 180 mg/dL, with peaks reaching up to 249.76 mg/dL and 247.75 mg/dL, indicating episodes of hyperglycemia",
+            "frequency": "21 events",
+            "average_magnitude": "Above 180 mg/dL"
+          }
+        ],
+        "term_definitions": [
+          {
+            "term": "Dawn phenomenon",
+            "definition": "A surge in blood glucose levels in the early morning hours, often due to hormonal changes increasing hepatic glucose production"
+          },
+          {
+            "term": "Glycemic variability",
+            "definition": "Fluctuations in blood glucose levels over a period, reflecting stability or instability in glycemic control"
+          },
+          {
+            "term": "Severe hypoglycemia",
+            "definition": "Blood glucose levels below 54 mg/dL, which can pose immediate health risks such as cognitive impairment or loss of consciousness"
+          },
+          {
+            "term": "Severe hyperglycemia",
+            "definition": "Blood glucose levels exceeding 350 mg/dL, associated with increased risk of diabetic ketoacidosis or hyperosmolar hyperglycemic state"
+          }
+        ]
+      },
+      "inductive_phase": {
+        "general_patterns": [
+          {
+            "pattern": "Wide glucose variability",
+            "evidence": "Readings range from 40 mg/dL to 249.76 mg/dL, with frequent fluctuations",
+            "frequency": "per monitoring period",
+            "significance": "Indicates instability in glycemic control, possibly due to inconsistent insulin dosing or lifestyle factors"
+          },
+          {
+            "pattern": "Hypoglycemic episodes",
+            "evidence": "11 events with readings below 70 mg/dL, including severe lows at 40 mg/dL and 47.5 mg/dL",
+            "frequency": "per monitoring period",
+            "significance": "Potential risk for hypoglycemia, suggests need for review of insulin or medication adjustments"
+          },
+          {
+            "pattern": "Hyperglycemic episodes",
+            "evidence": "21 events exceeding 180 mg/dL, with peaks over 240 mg/dL",
+            "frequency": "per monitoring period",
+            "significance": "Frequent hyperglycemia indicates possible post-meal spikes or insufficient glycemic control"
+          }
+        ],
+        "management_insights": [
+          {
+            "insight": "Inconsistent glycemic control",
+            "supporting_evidence": "Presence of both hypoglycemic and hyperglycemic episodes, wide variability",
+            "confidence_level": "high"
+          },
+          {
+            "insight": "Potential need for insulin regimen adjustment",
+            "supporting_evidence": "Frequent fluctuations and episodes suggest current management may not be optimal",
+            "confidence_level": "moderate to high"
+          }
+        ],
+        "meal_correlations": [
+          {
+            "meal_time": "Not specified",
+            "observed_pattern": "Multiple hyperglycemic spikes likely post-meal",
+            "potential_cause": "Possible delayed or insufficient insulin coverage for meals",
+            "consistency": "Likely based on glucose peaks following typical meal times"
+          }
+        ],
+        "activity_correlations": [
+          {
+            "activity_time": "Not specified",
+            "observed_pattern": "No direct data, but potential for activity-related glucose drops or rises",
+            "recommendation": "Monitor activity timing and intensity to assess impact on glucose levels",
+            "consistency": "Data insufficient for definitive pattern"
+          }
+        ],
+        "recurring_issues": [
+          {
+            "issue": "Nocturnal hypoglycemia",
+            "time_pattern": "Between 2:00-4:00 AM",
+            "frequency": "3 of 7 nights",
+            "potential_causes": [
+              "Overnight basal insulin excess",
+              "Delayed effects of evening activities or insulin"
+            ]
+          }
+        ]
+      },
+      "elenchus_phase": {
+        "challenged_assumptions": [
+          {
+            "original_assumption": "Morning hyperglycemia is due to dawn phenomenon",
+            "challenge": "Could be related to insufficient overnight basal insulin rather than dawn phenomenon",
+            "alternative_explanation": "Patient may be taking evening basal insulin too early",
+            "evidence_needed": "Basal insulin timing and overnight glucose trend details"
+          }
+        ],
+        "alternative_explanations": [
+          {
+            "pattern": "Post-meal hyperglycemia",
+            "original_explanation": "Insufficient insulin-to-carb ratio",
+            "alternative_explanations": [
+              {
+                "explanation": "Delayed insulin administration relative to meal start",
+                "plausibility": "high",
+                "supporting_evidence": "Sharp initial rise in glucose before eventual decrease"
+              },
+              {
+                "explanation": "Underestimated carbohydrate content in meals",
+                "plausibility": "medium",
+                "supporting_evidence": "Inconsistent meal-to-meal glucose response"
+              }
+            ]
+          }
+        ],
+        "correlation_challenges": [
+          {
+            "claimed_correlation": "Exercise at 17:00 causes glucose drop",
+            "challenge": "Glucose may be dropping due to delayed lunch insulin action rather than exercise",
+            "test_to_confirm": "Compare days with and without exercise at this time"
+          }
+        ],
+        "missing_factors": [
+          {
+            "factor": "Stress levels",
+            "potential_impact": "Increased cortisol from stress can raise blood glucose",
+            "relevance": "Could explain seemingly random glucose elevations"
+          },
+          {
+            "factor": "Menstrual cycle (if applicable)",
+            "potential_impact": "Hormonal fluctuations can affect insulin sensitivity",
+            "relevance": "Could explain cyclical patterns in glucose control"
+          }
+        ]
+      },
+      "maieutic_phase": {
+        "comprehensive_assessment": {
+          "overall_glucose_control": "suboptimal",
+          "primary_challenges": [
+            "Post-meal hyperglycemia",
+            "Nocturnal hypoglycemia",
+            "High glucose variability"
+          ],
+          "risk_assessment": {
+            "hypoglycemia_risk": "moderate",
+            "hyperglycemia_risk": "high",
+            "long_term_complications_risk": "elevated due to sustained periods above target range"
+          }
+        },
+        "pattern_explanations": [
+          {
+            "pattern": "Morning hyperglycemia",
+            "most_likely_explanation": "Combination of dawn phenomenon and insufficient overnight basal insulin",
+            "confidence_level": "high",
+            "alternative_explanations": [
+              "Late evening snack without insulin coverage",
+              "Somogyi effect following undetected nocturnal hypoglycemia"
+            ],
+            "supporting_evidence": "Consistent rise between 4:00-7:00 AM even on days without nocturnal hypoglycemia"
+          }
+        ],
+        "recommendations": [
+          {
+            "area": "Insulin therapy",
+            "specific_actions": [
+              {
+                "action": "Increase breakfast insulin-to-carb ratio from current ratio to 1:X",
+                "rationale": "Consistent post-breakfast hyperglycemia",
+                "priority": "high",
+                "expected_outcome": "Reduced post-breakfast glucose excursions"
+              }
+            ]
+          },
+          {
+            "area": "Meal planning",
+            "specific_actions": [
+              {
+                "action": "Redistribute carbohydrate intake with fewer carbs at breakfast",
+                "rationale": "Morning insulin resistance making breakfast spikes difficult to manage",
+                "priority": "medium",
+                "expected_outcome": "Smaller post-breakfast glucose excursions"
+              }
+            ]
+          },
+          {
+            "area": "Physical activity",
+            "specific_actions": [
+              {
+                "action": "Adjust pre-exercise insulin reduction from X% to Y%",
+                "rationale": "Current exercise adjustments resulting in hypoglycemia",
+                "priority": "medium",
+                "expected_outcome": "Reduced exercise-related hypoglycemia"
+              }
+            ]
+          },
+          {
+            "area": "Monitoring",
+            "specific_actions": [
+              {
+                "action": "Increase overnight CGM alerts for readings below 80 mg/dL",
+                "rationale": "Early detection of dropping glucose to prevent severe nocturnal hypoglycemia",
+                "priority": "high",
+                "expected_outcome": "Reduced frequency and severity of nocturnal hypoglycemia"
+              }
+            ]
+          }
+        ],
+        "follow_up": {
+          "recommended_timeframe": "2 weeks",
+          "key_metrics_to_evaluate": [
+            "Time in range (70-180 mg/dL)",
+            "Frequency of hypoglycemic events",
+            "Post-meal glucose excursions"
+          ],
+          "additional_data_needed": [
+            "Detailed food log with carbohydrate counts",
+            "Insulin dosing times relative to meals",
+            "Stress levels and sleep quality"
+          ]
+        }
+      }
+    }
+  },
+  "analysis_date": "2025-05-10 21:47:35.606851"
+}

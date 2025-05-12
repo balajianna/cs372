@@ -1,0 +1,70 @@
+{
+    "response_1": {
+        "scores": {
+            "definition": {
+                "score": 4,
+                "rationale": "The response uses clear language and avoids complex jargon, making it accessible for patients. It maintains a supportive tone and emphasizes caution, which is appropriate. However, some medical terms like 'glycemic control' could be briefly explained for complete clarity."
+            },
+            "generalization": {
+                "score": 3,
+                "rationale": "The guidance offers generally applicable advice, but some recommendations, such as 'consult a healthcare provider,' are broad. It lacks specific tailoring to this patient's unique data, such as their glucose variability and hypoglycemia frequency."
+            },
+            "induction": {
+                "score": 4,
+                "rationale": "The recommendations are practical and based on the data presented. The emphasis on monitoring, diet, and activity aligns with established guidelines. The caution regarding hypoglycemia is well-founded given the low readings."
+            },
+            "elenchus": {
+                "score": 3,
+                "rationale": "There are no obvious contradictions, but the suggestion to 'evaluate current medications' is somewhat vague since the patient is not on any medications. The focus on lifestyle is appropriate but could be more balanced with specific medical advice."
+            },
+            "hypothesis_elimination": {
+                "score": 3,
+                "rationale": "The response suggests further evaluation to rule out underlying conditions but doesn't explore other potential causes for the wide glucose fluctuations, such as stress or unrecognized medical issues."
+            },
+            "maieutic": {
+                "score": 4,
+                "rationale": "The guidance addresses key issues like hypoglycemia and variability, which are critical for improving control. The actionable steps are likely to help the patient better manage their glucose levels."
+            },
+            "dialectic": {
+                "score": 3,
+                "rationale": "While the recommendations are generally sound, some could be challenged\u2014for example, the emphasis on diet and activity without considering possible medication adjustments or further medical testing. The advice is reasonable but not exhaustive."
+            }
+        },
+        "total_score": 24,
+        "average_score": 3.4285714285714284
+    },
+    "response_2": {
+        "scores": {
+            "definition": {
+                "score": 3,
+                "rationale": "The language is fairly clear but includes some technical terms like 'glycemic excursions' and 'standard deviation' without explanation. The tone is professional but less patient-friendly. It could benefit from simpler language and more supportive phrasing."
+            },
+            "generalization": {
+                "score": 4,
+                "rationale": "The guidance is more specific and tailored, addressing the patient's data with concrete suggestions like working with a dietitian and considering medication adjustments. It avoids overgeneralization and is more actionable."
+            },
+            "induction": {
+                "score": 3,
+                "rationale": "The recommendations are practical but somewhat idealized; for example, suggesting 'consider insulin/medication adjustment' without knowing the patient's current treatment or underlying condition. The suggestions are supported by data but could be more nuanced."
+            },
+            "elenchus": {
+                "score": 4,
+                "rationale": "There are no apparent contradictions; the recommendations across categories are consistent and reinforce each other. The focus on medication, nutrition, activity, and sleep covers key areas comprehensively."
+            },
+            "hypothesis_elimination": {
+                "score": 4,
+                "rationale": "The response considers multiple potential causes for glucose variability, such as insulin sensitivity and metabolic irregularities, and suggests consulting specialists, which indicates awareness of alternative explanations."
+            },
+            "maieutic": {
+                "score": 4,
+                "rationale": "The guidance is detailed and actionable, addressing the most relevant issues like hypoglycemia and hyperglycemia. It provides practical steps that could lead to improved glucose control and patient understanding."
+            },
+            "dialectic": {
+                "score": 4,
+                "rationale": "The recommendations are well-supported but could be challenged on grounds such as the feasibility of daily exercise or the patient's ability to implement dietary changes without more personalized context. Nonetheless, they are generally reasonable and evidence-based."
+            }
+        },
+        "total_score": 26,
+        "average_score": 3.7142857142857144
+    }
+}
